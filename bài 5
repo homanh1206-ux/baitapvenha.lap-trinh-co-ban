@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float chieuCao, canNang, bmi;
+
+    // Nhập dữ liệu
+    cout << "Nhap chieu cao (m): ";
+    cin >> chieuCao;
+    cout << "Nhap can nang (kg): ";
+    cin >> canNang;
+
+    // Tính BMI
+    bmi = canNang / (chieuCao * chieuCao);
+
+    // Phân loại BMI
+    if (bmi > 25) {
+        cout << "Chi so BMI = " << bmi << endl;
+        cout << "Ban dang thua can";
+    } else if (bmi < 18.5) {
+        cout << "Chi so BMI = " << bmi << endl;
+        cout << "Ban dang gay";
+    } else {
+        cout << "Chi so BMI = " << bmi << endl;
+        cout << "Ban dang o muc binh thuong";
+    }
+
+    return 0;
+}
