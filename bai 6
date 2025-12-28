@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float canNang, trongLuong;
+
+    // Nhập cân nặng
+    cout << "Nhap can nang cua do vat (kg): ";
+    cin >> canNang;
+
+    // Tính trọng lượng
+    trongLuong = canNang * 9.8;
+
+    // In trọng lượng
+    cout << "Trong luong cua do vat la: " << trongLuong << " N" << endl;
+
+    // Kiểm tra điều kiện
+    if (trongLuong > 100) {
+        cout << "Vat qua nang";
+    } else if (trongLuong < 10) {
+        cout << "Vat qua nhe";
+    } else {
+        cout << "Trong luong vat binh thuong";
+    }
+
+    return 0;
+}
