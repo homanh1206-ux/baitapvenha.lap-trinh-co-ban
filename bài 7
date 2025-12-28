@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int tongGiay;
+    int ngay, gio, phut, giay;
+
+    cout << "Nhap so giay: ";
+    cin >> tongGiay;
+
+    ngay = tongGiay / 86400;
+    tongGiay %= 86400;
+
+    gio = tongGiay / 3600;
+    tongGiay %= 3600;
+
+    phut = tongGiay / 60;
+    giay = tongGiay % 60;
+
+    cout << "Thoi gian tuong ung: ";
+
+    if (ngay != 0)
+        cout << ngay << " ngay ";
+
+    if (gio != 0)
+        cout << gio << " gio ";
+
+    if (phut != 0)
+        cout << phut << " phut ";
+
+    if (giay != 0)
+        cout << giay << " giay ";
+
+    return 0;
+}
